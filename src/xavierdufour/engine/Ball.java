@@ -1,5 +1,6 @@
 package xavierdufour.engine;
 
+import java.awt.*;
 import java.util.Random;
 
 public class Ball {
@@ -28,6 +29,11 @@ public class Ball {
         if (hasTouchHorizontalBound()) {
             velocityX *= -1;
         }
+    }
+
+    public void draw(Graphics2D buffer) {
+        buffer.setPaint(Color.red);
+        buffer.fillOval(x, y, radius * 2, radius * 2);
     }
 
     public boolean hasTouchBound() {
