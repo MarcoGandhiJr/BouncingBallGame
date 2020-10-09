@@ -1,11 +1,11 @@
 package xavierdufour;
 
-import xavierdufour.engine.Game;
+import xavierdufour.engine.BouncingBallGame;
 
 public class Main {
 
     public static void main(String[] args) {
-        Game window = new Game();
-        window.start();
+        BouncingBallGame game = new BouncingBallGame();
+        game.start();
     }
 }
