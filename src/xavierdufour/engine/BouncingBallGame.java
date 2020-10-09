@@ -28,6 +28,8 @@ public class BouncingBallGame extends Game{
     public void draw(Buffer buffer) {
         ball.draw(buffer);
         buffer.drawText("Score: " + score, 10, 20, Color.white);
+        buffer.drawText("FPS: " + GameTime.getCurrentFps(), 10, 40, Color.white);
+        buffer.drawText("Time: " + GameTime.getElapsedFormattedTime(), 10, 60, Color.white);
     }
 
     @Override
